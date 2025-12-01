@@ -1,0 +1,180 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "unlockDate": "2025-12-01",
+      "title": "Day 1: Welcome to Yeeps Christmas!",
+      "learn": "Welcome to the Yeeps Christmas Advent Calendar! Each day you'll unlock new Yeeps-themed Christmas content, watch videos, and collect badges. Get ready for an amazing 24-day holiday adventure with the Yeeps community!",
+      "video": {
+        "src": "/videos/day1.mp4",
+        "title": "Welcome Video",
+        "description": "Watch this special welcome message to get started with your Yeeps adventure!"
+      }
+    },
+    {
+      "day": 2,
+      "unlockDate": "2025-12-02",
+      "title": "Day 2: Join the Christmas Calendar Discord!",
+      "learn": "Join the Christmas Calendar Discord server! This is where we discuss the calendar, share what we're seeing each day, and speculate about what's coming next. Connect with other Yeeps celebrating Christmas together!",
+      "discordLink": {
+        "url": "https://discord.gg/EVWuPj523p",
+        "title": "Join Christmas Calendar Discord",
+        "description": "Click the button below to join the Christmas Calendar Discord server! This is the place to talk about the calendar, discuss what we're seeing, and share thoughts about what might be coming next."
+      }
+    },
+    {
+      "day": 3,
+      "unlockDate": "2025-12-03",
+      "title": "Day 3: Hide and Seek Basics",
+      "learn": "Hide and Seek is at the heart of Yeeps! Players can hide in creative spots, seek out hidden treasures, and discover secret areas. The best hiding spots are often the most creative ones!",
+      "funFact": "Some Yeeps have become legendary for their incredible hiding skills and creative hiding spots!"
+    },
+    {
+      "day": 4,
+      "unlockDate": "2025-12-04",
+      "title": "Day 4: Building in Yeeps",
+      "learn": "Building is one of the most popular activities in Yeeps! You can create anything from cozy hideouts to massive structures. The only limit is your imagination. Share your builds with the community!",
+      "funFact": "The Yeeps building community has created some of the most amazing digital structures ever seen!"
+    },
+    {
+      "day": 5,
+      "unlockDate": "2025-12-05",
+      "title": "Day 5: Exploring New Worlds",
+      "learn": "Yeeps worlds are vast and full of secrets waiting to be discovered. Each world has its own unique features, hidden areas, and special treasures. Grab your map and start exploring!",
+      "funFact": "New worlds are added regularly, so there's always something new to explore!"
+    },
+    {
+      "day": 6,
+      "unlockDate": "2025-12-06",
+      "title": "Day 6: Community Events",
+      "learn": "The Yeeps community loves to come together for special events! From treasure hunts to building contests, there's always something exciting happening. Join in and make new friends!",
+      "funFact": "Community events often feature exclusive rewards and special content you can't get anywhere else!"
+    },
+    {
+      "day": 7,
+      "unlockDate": "2025-12-07",
+      "title": "Day 7: Collecting Badges",
+      "learn": "Badges are special rewards you earn by completing challenges, exploring worlds, and participating in events. Collect them all to show off your achievements! Each badge tells a story of your adventures.",
+      "funFact": "Some badges are extremely rare and can only be earned during special events or by completing difficult challenges!"
+    },
+    {
+      "day": 8,
+      "unlockDate": "2025-12-08",
+      "title": "Day 8: Creative Building Tips",
+      "learn": "Want to build something amazing? Start with a simple idea and expand from there. Use different materials, experiment with shapes, and don't be afraid to try new things. The best builds come from creativity!",
+      "funFact": "Many famous Yeeps builders started with simple structures and gradually improved their skills!"
+    },
+    {
+      "day": 9,
+      "unlockDate": "2025-12-09",
+      "title": "Day 9: Secret Codes and Passwords",
+      "learn": "Throughout your Yeeps adventure, you might discover special codes and passwords. These can unlock exclusive content, access hidden areas, or reveal secret messages. Keep your eyes open!",
+      "funFact": "Some codes are hidden in plain sight, while others require solving puzzles or completing quests!"
+    },
+    {
+      "day": 10,
+      "unlockDate": "2025-12-10",
+      "title": "Day 10: The Art of Hiding",
+      "learn": "Being a great hider in Yeeps takes practice! The best hiding spots are creative, unexpected, and blend into the environment. Think outside the box and use the world around you to your advantage.",
+      "funFact": "Some players have become so good at hiding that they've created entire guides and tutorials!"
+    },
+    {
+      "day": 11,
+      "unlockDate": "2025-12-11",
+      "title": "Day 11: Seeking Strategies",
+      "learn": "Being a great seeker means thinking like a hider! Look for unusual spots, check behind objects, and explore every corner. Sometimes the best hiding spots are right in front of you!",
+      "funFact": "The most successful seekers often use teamwork and communication to find hidden players!"
+    },
+    {
+      "day": 12,
+      "unlockDate": "2025-12-12",
+      "title": "Day 12: World Maps and Navigation",
+      "learn": "Navigating Yeeps worlds is an adventure in itself! Maps help you find important locations, but exploring off the beaten path often leads to the most exciting discoveries. Don't be afraid to get lost!",
+      "funFact": "Some of the best discoveries in Yeeps have been made by players who got lost and explored new areas!"
+    },
+    {
+      "day": 13,
+      "unlockDate": "2025-12-13",
+      "title": "Day 13: Fan Art Showcase",
+      "learn": "The Yeeps community is full of talented artists! Fan art brings the Yeeps world to life in amazing ways. Check out community galleries to see incredible artwork created by fellow players.",
+      "funFact": "Some fan art has become so popular that it's been featured in official Yeeps content!"
+    },
+    {
+      "day": 14,
+      "unlockDate": "2025-12-14",
+      "title": "Day 14: Mini Games and Challenges",
+      "learn": "Yeeps worlds are filled with fun mini-games and challenges! These activities test your skills, reward you with prizes, and add extra excitement to your adventures. Try them all!",
+      "funFact": "Mini-games are updated regularly with new challenges and rewards, so there's always something fresh to try!"
+    },
+    {
+      "day": 15,
+      "unlockDate": "2025-12-15",
+      "title": "Day 15: Wallpapers and Digital Art",
+      "learn": "Collect beautiful wallpapers and digital art featuring Yeeps! These can be used to personalize your devices or shared with friends. Each piece of art captures the magic of the Yeeps world.",
+      "funFact": "Some wallpapers are exclusive rewards that can only be obtained during special events!"
+    },
+    {
+      "day": 16,
+      "unlockDate": "2025-12-16",
+      "title": "Day 16: Lore and Stories",
+      "learn": "The Yeeps universe has rich lore and stories waiting to be discovered! Learn about the history of Yeeps, their adventures, and the worlds they inhabit. Every story adds depth to your experience.",
+      "funFact": "The Yeeps lore is constantly expanding with new stories and adventures added regularly!"
+    },
+    {
+      "day": 17,
+      "unlockDate": "2025-12-17",
+      "title": "Day 17: Community Building",
+      "learn": "The Yeeps community is built on friendship, creativity, and shared adventures! Join groups, participate in discussions, and make connections with other players. Together, you can create amazing experiences!",
+      "funFact": "Many lifelong friendships have been formed through the Yeeps community!"
+    },
+    {
+      "day": 18,
+      "unlockDate": "2025-12-18",
+      "title": "Day 18: Special Events Calendar",
+      "learn": "Yeeps hosts special events throughout the year! From holiday celebrations to community challenges, there's always something exciting happening. Mark your calendar and don't miss out!",
+      "funFact": "Special events often feature exclusive content, rare rewards, and unique experiences you can't get any other time!"
+    },
+    {
+      "day": 19,
+      "unlockDate": "2025-12-19",
+      "title": "Day 19: Advanced Building Techniques",
+      "learn": "Ready to take your building skills to the next level? Learn advanced techniques like complex structures, detailed decorations, and creative use of materials. Practice makes perfect!",
+      "funFact": "Some advanced builders have created structures so impressive they've been featured in community showcases!"
+    },
+    {
+      "day": 20,
+      "unlockDate": "2025-12-20",
+      "title": "Day 20: Treasure Hunting",
+      "learn": "Treasure hunting is a favorite activity in Yeeps! Search for hidden treasures, solve puzzles, and follow clues to discover amazing rewards. The best treasures are often the hardest to find!",
+      "funFact": "Some treasures are so well-hidden that they've taken the community weeks to discover!"
+    },
+    {
+      "day": 21,
+      "unlockDate": "2025-12-21",
+      "title": "Day 21: World Portals",
+      "learn": "Portals connect different Yeeps worlds together! Discover portals to access new areas, unlock special content, and explore dimensions you've never seen before. Each portal is a gateway to adventure!",
+      "funFact": "Some portals are hidden and can only be found by solving complex puzzles or completing special quests!"
+    },
+    {
+      "day": 22,
+      "unlockDate": "2025-12-22",
+      "title": "Day 22: Achievements and Milestones",
+      "learn": "Track your progress with achievements and milestones! These celebrate your accomplishments, from completing your first build to mastering advanced techniques. Every achievement tells your story!",
+      "funFact": "Some achievements are so rare that only a handful of players have ever earned them!"
+    },
+    {
+      "day": 23,
+      "unlockDate": "2025-12-23",
+      "title": "Day 23: The Grand Adventure",
+      "learn": "You're almost at the end of your 24-day journey! You've explored worlds, collected badges, learned about Yeeps, and become part of an amazing community. You're ready for the ultimate adventure!",
+      "funFact": "The grand adventure awaits those who have completed all 24 days of the calendar!"
+    },
+    {
+      "day": 24,
+      "unlockDate": "2025-12-24",
+      "title": "Day 24: Congratulations!",
+      "learn": "Congratulations! You've completed all 24 days of the Yeeps: Hide and Seek Advent Calendar! You've unlocked amazing content, collected badges, and become a true Yeeps explorer. Your adventure is just beginning!",
+      "funFact": "Completing the calendar unlocks exclusive content and special rewards that celebrate your achievement!"
+    }
+  ]
+}
