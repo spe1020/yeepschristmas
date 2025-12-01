@@ -1,18 +1,15 @@
 import path from "node:path";
 
 import react from "@vitejs/plugin-react-swc";
-import { defineConfig } from "vitest/config";
 
-// https://vitejs.dev/config/
-export default defineConfig(() => ({
-  base: '/',
-  server: {
-    host: "::",
-    port: 8080,
-  },
-  plugins: [
-    react(),
-  ],
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  base: '/yeepschristmas/',  // <-- IMPORTANT
+  plugins: [react()],
+})
+
   build: {
     // Build to default 'dist' directory for GitHub Pages Actions
   },
