@@ -4,13 +4,13 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // IMPORTANT: project is served from /yeepschristmas/ on GitHub Pages
-  base: '/yeepschristmas/',
+  // Site is served at root on yeeps.christmas
+  base: '/',
 
   plugins: [react()],
 
   build: {
-    // default build to "dist" is fine for GitHub Pages
+    // default build to "dist"
   },
 
   resolve: {
@@ -19,7 +19,6 @@ export default defineConfig({
     },
   },
 
-  // Keep your test config if you're using Vitest
   test: {
     globals: true,
     environment: 'jsdom',
@@ -32,4 +31,3 @@ export default defineConfig({
     },
   },
 })
-
