@@ -182,13 +182,23 @@ export function YeepsDayModal({ isOpen, onClose, dayContent, onDayCompleted }: Y
                   <video
                     controls
                     className="w-full h-auto max-h-[500px]"
-                    poster={dayContent.video.poster}
+                    poster={dayContent.video.poster ? (dayContent.video.poster.startsWith('/') ? `${import.meta.env.BASE_URL}${dayContent.video.poster.slice(1)}` : dayContent.video.poster) : undefined}
                     preload="metadata"
                   >
-                    <source src={dayContent.video.src} type="video/mp4" />
-                    <source src={dayContent.video.src} type="video/quicktime" />
-                    <source src={dayContent.video.src} type="video/webm" />
-                    <source src={dayContent.video.src} type="video/ogg" />
+                    {(() => {
+                      // Fix video src to use BASE_URL if it starts with /
+                      const videoSrc = dayContent.video.src.startsWith('/') 
+                        ? `${import.meta.env.BASE_URL}${dayContent.video.src.slice(1)}`
+                        : dayContent.video.src;
+                      return (
+                        <>
+                          <source src={videoSrc} type="video/mp4" />
+                          <source src={videoSrc} type="video/quicktime" />
+                          <source src={videoSrc} type="video/webm" />
+                          <source src={videoSrc} type="video/ogg" />
+                        </>
+                      );
+                    })()}
                     Your browser does not support the video tag.
                   </video>
                 </div>

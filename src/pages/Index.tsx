@@ -135,7 +135,7 @@ const Index = () => {
             <div className="flex items-center gap-2 min-w-0 flex-1">
               {/* Yeeps Logo */}
               <img 
-                src="/images/yeeps-logo.png" 
+                src={`${import.meta.env.BASE_URL}images/yeeps-logo.png`}
                 alt="Yeeps Logo" 
                 className="h-8 w-auto sm:h-10 md:h-12 flex-shrink-0"
               />
@@ -232,7 +232,7 @@ const Index = () => {
           {/* Yeeps Logo */}
           <div className="flex justify-center mb-4">
             <img 
-              src="/images/yeeps-logo.png" 
+              src={`${import.meta.env.BASE_URL}images/yeeps-logo.png`}
               alt="Yeeps Logo" 
               className="h-16 w-auto sm:h-20 md:h-24"
             />
