@@ -1,6 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
+  push:
+    branches: [ main ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -39,6 +41,8 @@ jobs:
           npm run build
           # build outputs to dist/ — ensure dist/index.html exists
           cp dist/index.html dist/404.html
+          # Create .nojekyll to prevent Jekyll processing
+          touch dist/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
