@@ -61,7 +61,9 @@ const Index = () => {
 
   // Load Yeeps calendar data
   useEffect(() => {
-    fetch('/advent-data.json?v=' + Date.now()) // Cache busting to ensure fresh data
+    // Use BASE_URL to ensure correct path on GitHub Pages
+    const dataUrl = `${import.meta.env.BASE_URL}advent-data.json?v=${Date.now()}`;
+    fetch(dataUrl) // Cache busting to ensure fresh data
       .then(res => res.json())
       .then(data => setYeepsData(data))
       .catch(err => {
