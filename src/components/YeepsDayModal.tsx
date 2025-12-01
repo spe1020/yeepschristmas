@@ -14,6 +14,7 @@ import { useBadges } from '@/hooks/useBadges';
 import { useStreak } from '@/hooks/useStreak';
 import { useAvatar } from '@/hooks/useAvatar';
 import { useToast } from '@/hooks/useToast';
+import { getAssetUrl } from '@/lib/utils';
 
 // Temporary interface for backward compatibility with existing data structure
 // Will be replaced with full DayContent types from dayContentTypes.ts when content is ready
@@ -182,14 +183,11 @@ export function YeepsDayModal({ isOpen, onClose, dayContent, onDayCompleted }: Y
                   <video
                     controls
                     className="w-full h-auto max-h-[500px]"
-                    poster={dayContent.video.poster ? (dayContent.video.poster.startsWith('/') ? `${import.meta.env.BASE_URL}${dayContent.video.poster.slice(1)}` : dayContent.video.poster) : undefined}
+                    poster={dayContent.video.poster ? getAssetUrl(dayContent.video.poster) : undefined}
                     preload="metadata"
                   >
                     {(() => {
-                      // Fix video src to use BASE_URL if it starts with /
-                      const videoSrc = dayContent.video.src.startsWith('/') 
-                        ? `${import.meta.env.BASE_URL}${dayContent.video.src.slice(1)}`
-                        : dayContent.video.src;
+                      const videoSrc = getAssetUrl(dayContent.video.src);
                       return (
                         <>
                           <source src={videoSrc} type="video/mp4" />
