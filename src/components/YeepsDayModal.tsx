@@ -15,6 +15,7 @@ import { useStreak } from '@/hooks/useStreak';
 import { useAvatar } from '@/hooks/useAvatar';
 import { useToast } from '@/hooks/useToast';
 import { getAssetUrl } from '@/lib/utils';
+import { DragonAnimation } from '@/components/DragonAnimation';
 
 // Temporary interface for backward compatibility with existing data structure
 // Will be replaced with full DayContent types from dayContentTypes.ts when content is ready
@@ -98,9 +99,18 @@ export function YeepsDayModal({ isOpen, onClose, dayContent, onDayCompleted }: Y
       const streakResult = updateStreak(dayContent.unlockDate);
       
       // Earn badge with emoji based on day - Yeeps themed
-      const badgeEmojis = ['🟦', '🟫', '🟩', '🟨', '🟧', '🟪', '💎', '🗺️', '🛠️', '🌀', '⚔️', '🏰', '🎮', '🎨', '🎭', '🎯', '🎲', '🎸', '🎺', '🎻', '🥁', '🎤', '🎬', '🚀'];
-      const emoji = badgeEmojis[(dayContent.day - 1) % badgeEmojis.length];
-      const badgeTitle = `Day ${dayContent.day} Complete!`;
+      // Special dragon badge for day 3 (Dragon Fest!)
+      let emoji: string;
+      let badgeTitle: string;
+      
+      if (dayContent.day === 3) {
+        emoji = '🐉';
+        badgeTitle = 'Dragon Fest Champion! 🐉';
+      } else {
+        const badgeEmojis = ['🟦', '🟫', '🟩', '🟨', '🟧', '🟪', '💎', '🗺️', '🛠️', '🌀', '⚔️', '🏰', '🎮', '🎨', '🎭', '🎯', '🎲', '🎸', '🎺', '🎻', '🥁', '🎤', '🎬', '🚀'];
+        emoji = badgeEmojis[(dayContent.day - 1) % badgeEmojis.length];
+        badgeTitle = `Day ${dayContent.day} Complete!`;
+      }
       
       earnBadge(dayContent.day, badgeTitle, emoji);
       
@@ -154,6 +164,26 @@ export function YeepsDayModal({ isOpen, onClose, dayContent, onDayCompleted }: Y
         </DialogHeader>
 
         <div className="space-y-4 w-full min-w-0">
+          {/* Dragon Fest Animation for Day 3 */}
+          {dayContent.day === 3 && (
+            <Card className="overflow-hidden w-full border-2 border-orange-500 bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30">
+              <CardHeader className="pb-3 bg-gradient-to-r from-orange-500/20 to-red-500/20">
+                <CardTitle className="text-lg flex items-center gap-2">
+                  <span className="text-2xl">🐉</span>
+                  <span>We are celebrating Dragon Fest on Yeeps! 🐉</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-4">
+                <div className="w-full h-64 rounded-lg overflow-hidden bg-gradient-to-b from-sky-100 to-purple-100 dark:from-sky-900/30 dark:to-purple-900/30">
+                  <DragonAnimation className="w-full h-full" />
+                </div>
+                <p className="text-center mt-4 text-lg font-semibold text-orange-700 dark:text-orange-300">
+                  🎉 Happy Dragon Fest! 🎉
+                </p>
+              </CardContent>
+            </Card>
+          )}
+
           {/* Learn Section */}
           <Card className="overflow-hidden w-full border-2 border-yeep-primary/50">
             <CardHeader className="pb-3 bg-gradient-to-r from-yeep-primary/20 to-yeep-secondary/20">

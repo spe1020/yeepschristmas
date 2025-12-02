@@ -6,7 +6,7 @@
 export const calendarConfig = {
   // Preview mode: Set to true to unlock all days for development/testing
   // Set to false to use actual unlock dates
-  previewMode: false,
+  previewMode: true,
   
   // Base year for unlock dates
   year: 2025,
